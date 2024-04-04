@@ -1,0 +1,23 @@
+//pascal triangle
+#include <stdio.h>
+int main() {
+int i,j,k,r,coef;
+
+printf("enter the no  of rows for the pasacal triangle : ");
+scanf("%d",&r);
+
+for(i=1;i<=r;i++){
+ 
+    for(j=(r-1);j>=i;j--){
+        printf("\t");
+    }
+coef=1;
+    for(k=1;k<=i;k++)
+{     printf("%d\t\t",coef);
+    coef=coef*(i-k)/k;
+   
+}
+printf("\n");
+}
+return 0;
+}
